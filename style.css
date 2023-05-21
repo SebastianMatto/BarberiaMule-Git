@@ -2,11 +2,11 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(237,232,11,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(246,230,82,1) 100%);
 }
 
 header{
-    background-color: #BBBBBB;
+    background-color: #f6e652;
     padding: 15px 0px;
 }
 
@@ -37,7 +37,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #c78c19;
+    color: #d6844e;
     text-decoration: underline;
 }
 
@@ -112,6 +112,10 @@ main{
     border-color: rgba(0, 0, 255, .5);
 }
 
+.tarjeta-servicio img{
+    border-radius: 15px;
+    margin: 5px 5px;
+}
 
 
 .producto-descripcion{
