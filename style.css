@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(237,232,11,1) 100%);
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 15px 0px;
+}
+
+.container{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicios{
+    margin-top: 99px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloservicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat( 3 , 2fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 82px 1px;
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.tarjeta-servicio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 255px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.tarjeta-servicio h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tarjeta-servicio:hover{
+    border-color: rgba(255, 0, 0, .5);
+
+}
+
+
+.tarjeta-servicio:hover h2{
+    font-size: 33px;
+}
+
+.tarjeta-servicio:active{
+    border-color: rgba(0, 0, 255, .5);
+}
+
+
+
+.producto-descripcion{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.producto-precio{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px ;
+}
+
+footer{
+    width: auto;
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px ;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-decoration: underline 1px solid;
+    padding-top: 30px;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 160px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapacont{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.ContDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listDiff{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "★";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 8px black;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.5;
+}
+
+
+.video{
+    width: 560px;
+    margin: 5em auto;
+}
+
+@media only screen and (max-width: 680px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .listDiff{
+        width: 100%;
+    }
+
+    .imagenDiferenciales{
+        width: 0%;
+    }
+
+    #servicios{
+        width: auto;
+    }
+
+    .tarjetas{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-servicio{
+        width: auto;
+        display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    }
+
+    .imgProducto{
+        width: auto;
+    }
+
+
+
+    main , .container , .principal , .mapacont , .ContDiferenciales , .video{
+        width: auto;
+    }
+}
