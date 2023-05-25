@@ -109,7 +109,7 @@ td, th{
 
 footer{
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background: url(../imagenes/bg.jpg);
     padding: 40px ;
 }
 

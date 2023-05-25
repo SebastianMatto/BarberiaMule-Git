@@ -130,12 +130,7 @@ main{
     margin-top: 10px ;
 }
 
-footer{
-    width: auto;
-    text-align: center;
-    background: url(imagenes/bg.jpg);
-    padding: 40px ;
-}
+
 
 .copyright{
     color: #ffffff;
@@ -228,6 +223,13 @@ footer{
 .video{
     width: 560px;
     margin: 5em auto;
+}
+
+footer{
+    width: auto;
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px ;
 }
 
 @media only screen and (max-width: 680px) {
