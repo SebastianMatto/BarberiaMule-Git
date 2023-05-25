@@ -1,8 +1,10 @@
 body{
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(246,230,82,1) 100%);}
+    font-family:'Raleway', sans-serif;;
+    background-color: #181818;
+    color: #ffffff;
+}
 
 
 header{
@@ -42,69 +44,73 @@ nav a:hover{
 }
 
 
-main{
+/* main{
     width: 940px;
     margin: 0 auto;
 
+} */
+
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background-color: #181818;
+    color: #ffffff;
 }
 
-form{
-    margin: 40px;
+.logoContacto{
+    text-align: center;
+    font-size: 3em;
 }
 
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-
+.logoContacto span{
+    color: #f6e652;
 }
 
-.inputusuario{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-
-.checkbox{
-    margin: 20px 0px;
+.contact-wrapper > *{
+    padding: 1em;
 }
 
-.submit{
-    width: 40%;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: orange;
+.contact-form{
+    background-color: #222222;
+}
+
+.contact-form form{
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form, p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button, .contact-form form input, .contact-form form textarea{
+    width: 100%;
+    padding: .7em;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #f6e652;
 }
 
-.submit:hover{
-    background: darkorange;
-    transition: 0.2s all;
-    transform: scale(1.1) ;
-}
-
-table{
-    margin: 40px 40px;
+.contact-form form button{
+    background: #f6e652;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
 
 }
 
-thead{
-    background: #555555;
-    color: white;
-    font-weight: bold;
+.contact-info{
+    background-color: #000000;
 }
-
-td, th{
-    border: 1px solid black;
-    padding: 8px 15px;
-}
-
 
 
 footer{
