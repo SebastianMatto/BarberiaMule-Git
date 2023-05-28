@@ -1,9 +1,8 @@
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(246,230,82,1) 100%);
     overflow-x: hidden !important;
+    background: #181818;
 }
 
 header{
@@ -113,13 +112,19 @@ main{
     text-align: center;
     flex-direction: column;
     align-items: center;
+    animation: backInUp;
+    animation-duration: 1.2s;
+    color: rgba(255, 255, 255, .5);
+    
 }
 
 #servicios{
     margin-top: 99px;
     display: flex;
     flex-direction: column;
+    
 }
+
 
 .tituloservicios{
     display: flex;
@@ -129,6 +134,7 @@ main{
     font-size: 2em;
     font-weight: bold;
 }
+
 
 .tarjetas{
     display: grid;
@@ -140,21 +146,25 @@ main{
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+
 }
+
 
 .tarjeta-servicio{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 255px;
+    height: 650px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border-color: black;
+    border-color: rgba(0,0,0,0.5);
     border-width: 2px;
     border-style: solid;
     border-radius: 5%;
+    background: #222222;
 }
 
 .tarjeta-servicio h2{
@@ -164,8 +174,8 @@ main{
 }
 
 .tarjeta-servicio:hover{
-    border-color: rgba(255, 0, 0, .5);
-
+    border-color: rgba(255, 0, 0, .3);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
 }
 
 
@@ -174,7 +184,7 @@ main{
 }
 
 .tarjeta-servicio:active{
-    border-color: rgba(0, 0, 255, .5);
+    border-color: rgba(0, 0, 255, .3);
 }
 
 .tarjeta-servicio img{
@@ -184,15 +194,39 @@ main{
 
 
 .producto-descripcion{
-    font-size: 18px;
+    font-size: 21px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .producto-precio{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin-top: 10px ;
+}
+
+.producto-btn{
+    background: #f6e652;
+    padding: 13px;
+    text-decoration: none;
+    color: #181818;
+    font-size: 22px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+
+}
+
+.producto-btn a{
+    text-decoration: none;
+}
+
+.producto-btn:hover,
+.producto-btn:focus {
+    background: #d3c22e;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
 }
 
 
@@ -340,7 +374,7 @@ footer{
         display: flex;
         justify-content: left;
         align-items: center;
-        width: 100vw;
+        width: 120vw;
     }
 
     .menu nav{
