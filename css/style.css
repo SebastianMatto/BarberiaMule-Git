@@ -118,6 +118,40 @@ main{
     
 }
 
+h1{
+    font-size: 4em;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, .5);
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+    width: 100%;
+    background-image: linear-gradient( 0deg, rgb(11, 0, 15), rgb(74 74 74 / 50%) ) , url(/BarberiaMule/banner/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 114px 0px;
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+#hero .titulo{
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -0.3rem -0.2rem 0.4rem var(--link-color);
+}
+#hero .titulo:hover{
+    text-shadow: -0.3rem -0.2rem 0.4rem var(--neon-blue);
+}
+
 #servicios{
     margin-top: 99px;
     display: flex;
@@ -132,6 +166,7 @@ main{
     align-items: center;
     text-align: center;
     font-size: 2em;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -249,6 +284,7 @@ main{
     clear: left;
     text-decoration: underline 1px solid;
     padding-top: 30px;
+    color: white;
 }
 
 .principal p{
@@ -428,5 +464,19 @@ footer{
     .imgProducto{
         width: auto;
     }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+#hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
 
 }
