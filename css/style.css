@@ -444,6 +444,7 @@ footer{
 
     .socialmedia{
         display: flex;
+        padding-left: 0;
     }
 
     .bars__menu{
@@ -457,7 +458,7 @@ footer{
 
 
     .menu{
-        height: 50vh;
+        height: 100vh;
         position: absolute;
         top: 0;
         left: 5200px;
@@ -474,19 +475,23 @@ footer{
         display: flex;
         justify-content: left;
         align-items: center;
-        width: 120vw;
+        width: 50vw;
     }
 
     .menu nav{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding-top: 50%;
     }
 
     .menu nav ul {
         display: flex;
         flex-direction: column;
+        padding-left: 0;
+        
     }
+    
 
     .menu nav ul li{
         margin: 8px 0px;
@@ -494,6 +499,7 @@ footer{
 
     .menu nav ul li a{
         font-size: var(--lowText_font_size);
+        
     }
 
     .btn__quote{
