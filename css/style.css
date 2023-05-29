@@ -1,3 +1,9 @@
+:root{
+    --primary-color: #f6e652;
+    --second-color: #c78c19;
+}
+
+
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -6,7 +12,7 @@ body{
 }
 
 header{
-    background-color: #f6e652;
+    background-color: var(--primary-color);
     padding: 15px 0px;
     display: flex;
     flex-direction: inherit;
@@ -43,6 +49,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 100px ;
 }
 
 nav a{
@@ -55,12 +62,15 @@ nav a{
 }
 
 nav a:hover{
-    color: #c78c19;
+    color: var(--second-color);
     text-decoration: underline;
 }
 
 .socialmedia{
     margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
 }
 
 .socialmedia a{
@@ -153,7 +163,7 @@ h1{
 }
 
 #servicios{
-    margin-top: 99px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     
@@ -241,7 +251,7 @@ h1{
 }
 
 .producto-btn{
-    background: #f6e652;
+    background: var(--primary-color);
     padding: 13px;
     text-decoration: none;
     color: #181818;
@@ -287,12 +297,23 @@ h1{
     color: white;
 }
 
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
 .principal p{
     margin: 0 0 1em;
+    width: 57%;
 }
 
 .principal strong{
     font-weight: bold;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .principal em{
@@ -300,9 +321,9 @@ h1{
 }
 
 .utensilios{
-    width: 160px;
-    float: left;
-    margin: 0 20px 20px 0;
+    width: 300px;
+    margin: 0 20px 40px 0px;
+    border-radius: 20px;
 }
 
 
@@ -313,6 +334,8 @@ h1{
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 .mapacont{
@@ -321,23 +344,31 @@ h1{
 }
 
 .ContDiferenciales{
-    width: 640px;
+    width: 800px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .listDiff{
     width: 40%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     vertical-align: top;
     text-align: center;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 15px;
 }
 
 .items{
     line-height: 1.5;
 }
 
+
 .items::before{
-    content: "★";
+    content: "★ ";
 }
 
 .items:first-child{
@@ -354,6 +385,17 @@ h1{
     opacity: 0.5;
 }
 
+#youtube{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#youtube .video{
+    padding: 25px 0px;
+}
 
 .video{
     width: 560px;
@@ -365,6 +407,28 @@ footer{
     text-align: center;
     background: url(../imagenes/bg.jpg);
     padding: 40px ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoycopy{
+    width: 50%;
+}
+
+.socialmediafooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.socialmediafooter a{
+    padding-top: 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -463,6 +527,25 @@ footer{
 
     .imgProducto{
         width: auto;
+    }
+
+    #youtube{
+        display: flex;
+        flex-direction: column;
+        padding: 139px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #youtube iframe{
+        width: 560px;
+        min-height: 315px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

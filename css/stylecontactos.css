@@ -46,6 +46,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 100px;
 }
 
 nav a{
@@ -64,6 +65,9 @@ nav a:hover{
 
 .socialmedia{
     margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
 }
 
 .socialmedia a{
