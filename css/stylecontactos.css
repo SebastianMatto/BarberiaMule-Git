@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #f6e652;
+    --second-color: #c78c19;
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -215,25 +220,50 @@ main{
 
 .contact-info ul li{
     padding: .3em;
+    color: var(--primary-color);
 }
 
 .contact-info ul li i a{
     text-decoration: none;
     margin-left: 15px;
+    color: var(--primary-color);
 }
 
 
 
 footer{
+    width: auto;
     text-align: center;
     background: url(../imagenes/bg.jpg);
     padding: 40px ;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .copyright{
     color: #ffffff;
     font-size: 13px;
     margin: 20px;
+}
+
+.logoycopy{
+    width: 50%;
+}
+
+.socialmediafooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.socialmediafooter a{
+    padding-top: 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* Small Screen */
@@ -250,6 +280,7 @@ footer{
 
     .socialmedia{
         display: flex;
+        padding-left: 0;
     }
 
     .bars__menu{
@@ -263,7 +294,7 @@ footer{
 
 
     .menu{
-        height: 50vh;
+        height: 100vh;
         position: absolute;
         top: 0;
         left: 5200px;
@@ -280,19 +311,23 @@ footer{
         display: flex;
         justify-content: left;
         align-items: center;
-        width: 120vw;
+        width: 100%;
     }
 
     .menu nav{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding-top: 50%;
     }
 
     .menu nav ul {
         display: flex;
         flex-direction: column;
+        padding-left: 0;
+        
     }
+    
 
     .menu nav ul li{
         margin: 8px 0px;
@@ -300,6 +335,7 @@ footer{
 
     .menu nav ul li a{
         font-size: var(--lowText_font_size);
+        
     }
 
     .btn__quote{

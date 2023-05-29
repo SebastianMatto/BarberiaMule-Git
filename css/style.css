@@ -475,7 +475,7 @@ footer{
         display: flex;
         justify-content: left;
         align-items: center;
-        width: 50vw;
+       width: 100%;
     }
 
     .menu nav{
