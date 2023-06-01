@@ -456,6 +456,10 @@ footer{
         max-width: 768px;
     }
 
+    .mapacont{
+        width: 80%;
+    }
+
 
     .menu{
         height: 100vh;
@@ -507,12 +511,20 @@ footer{
         margin-bottom: 20px;
     }
 
+    .ContDiferenciales{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .listDiff{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
     }
 
     .imagenDiferenciales{
-        width: 0%;
+        display: none;
     }
 
     #servicios{
@@ -544,7 +556,7 @@ footer{
     }
 
     #youtube iframe{
-        width: 560px;
+        width: 300px;
         min-height: 315px;
     }
 
@@ -567,5 +579,6 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
 }
+
 
 }
